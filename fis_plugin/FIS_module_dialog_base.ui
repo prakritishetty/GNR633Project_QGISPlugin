@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+      <class>FISDialogBase</class>
+
+      <widget class="QDialog" name="FISDialogBase">
+            <property name="geometry">
+                  <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>513</width>
+                        <height>583</height>
+                  </rect>
+            </property>
+            <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                  </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                  <size>
+                        <width>513</width>
+                        <height>583</height>
+                  </size>
+            </property>
+            <property name="maximumSize">
+                  <size>
+                        <width>513</width>
+                        <height>583</height>
+                  </size>
+            </property>
+            <property name="palette">
+                  <palette>
+                        <active>
+                              <colorrole role="Highlight">
+                                    <brush brushstyle="SolidPattern">
+                                          <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                          </color>
+                                    </brush>
+                              </colorrole>
+                        </active>
+                        <inactive>
+                              <colorrole role="Highlight">
+                                    <brush brushstyle="SolidPattern">
+                                          <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                          </color>
+                                    </brush>
+                              </colorrole>
+                        </inactive>
+                        <disabled>
+                              <colorrole role="Highlight">
+                                    <brush brushstyle="SolidPattern">
+                                          <color alpha="255">
+                                                <red>0</red>
+                                                <green>0</green>
+                                                <blue>0</blue>
+                                          </color>
+                                    </brush>
+                              </colorrole>
+                        </disabled>
+                  </palette>
+            </property>
+            <property name="windowTitle">
+                  <string>Fuzzy inference system</string>
+            </property>
+            <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="sizeGripEnabled">
+                  <bool>false</bool>
+            </property>
+            <widget class="QTabWidget" name="WofE">
+                  <property name="geometry">
+                        <rect>
+                              <x>10</x>
+                              <y>10</y>
+                              <width>491</width>
+                              <height>561</height>
+                        </rect>
+                  </property>
+                  <property name="font">
+                        <font>
+                              <pointsize>10</pointsize>
+                        </font>
+                  </property>
+                  <property name="whatsThis">
+                        <string>
+                              &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                        </string>
+                  </property>
+                  <property name="autoFillBackground">
+                        <bool>false</bool>
+                  </property>
+                  <property name="currentIndex">
+                        <number>0</number>
+                  </property>
+
+                  <widget class="QWidget" name="identify_factors">
+                        <attribute name="title">
+                              <string>Identify factors</string>
+                        </attribute>
+
+                        <widget class="QTextBrowser" name="textBrowser_2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>10</y>
+                                          <width>471</width>
+                                          <height>101</height>
+                                    </rect>
+                              </property>
+                              <property name="html">
+                                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot;
+                                          &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                          &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                          content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                          p, li { white-space: pre-wrap; }
+                                          &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2';
+                                          font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Instructions for data
+                                          pre-processing:&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;The &lt;/span&gt;&lt;span style=&quot;
+                                          font-size:9pt; font-weight:600;&quot;&gt;'Pre-process'&lt;/span&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt; button below:&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt; 1. Creates the training data,
+                                          &lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt; 2. Clips the evidence rasters to the
+                                          extent of the mask layer, and &lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt; 3. Resamples the evidence rasters to the
+                                          unit area of each training point.&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Accepted data
+                                          formats:&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;Evidence Raster: GeoTIFFf
+                                          (.tif)&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;Extent Mask Layer: Shapefile
+                                          (.shp)&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;Training Sites: Shapefile
+                                          (.shp)&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                          text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;The &lt;/span&gt;&lt;span style=&quot;
+                                          font-size:9pt; font-weight:600;&quot;&gt;'Extent Mask Layer'
+                                          &lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;defines the extent
+                                          of the study area.&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          font-weight:600; color:#aa0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-weight:600; color:#aa0000;&quot;&gt;The input 'Training
+                                          Sites' layer should have a field called 'Dep_ID' with value '1' for each
+                                          training point.&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          color:#aa0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The input
+                                          evidence rasters should have the same projected coordinate system. &lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                          text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;There should
+                                          not be any missing or no-data values in the evidence rasters.&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                          text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The input
+                                          eveidence raster could be a &lt;span style=&quot;
+                                          font-weight:600;&quot;&gt;categorical dataset or multiclass numerical
+                                          dataset.&lt;/span&gt; However if the input evidence raster is continuous
+                                          numerical dataset, then the data will still be pre-processed, but it will not
+                                          be a valid input for the subsequent 'Calculate Weights' tool.&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                          text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;All temporary files get stored in the
+                                          &lt;/span&gt;&lt;span style=&quot; font-size:9pt;
+                                          font-weight:600;&quot;&gt;'Enter the number of factors' &lt;/span&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;directory.&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;All relevant processed data files get
+                                          stored in the&lt;/span&gt;&lt;span style=&quot; font-size:9pt;
+                                          font-weight:600;&quot;&gt; 'Current Workspace'&lt;/span&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt; directory.&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+                                          &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                          margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt;The processed evidence rasters are also
+                                          loaded to the map project. Use these files for calculation of wieghts in the
+                                          &lt;/span&gt;&lt;span style=&quot; font-size:9pt;
+                                          font-weight:600;&quot;&gt;'Calculate Weights'&lt;/span&gt;&lt;span
+                                          style=&quot; font-size:9pt;&quot;&gt; tab.&lt;/span&gt;&lt;/p&gt;
+                                          &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px;
+                                          margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;
+                                          font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                    </string>
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_pre_proc">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>130</x>
+                                          <y>480</y>
+                                          <width>120</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Save</string>
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_pre_proc_cancel">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>250</x>
+                                          <y>480</y>
+                                          <width>81</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Cancel</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_no_facs">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>140</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Enter the number of factors</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="no_facs">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>380</x>
+                                          <y>140</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_no_vars_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>200</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Number of variables for factor 1</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="no_vars_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>380</x>
+                                          <y>200</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_no_vars_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>260</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Number of variables for factor 2</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="no_vars_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>380</x>
+                                          <y>260</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_no_vars_outputfac">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>320</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Number of variables for output factor</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="no_vars_outputfac">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>380</x>
+                                          <y>320</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                        </widget>
+
+
+                  </widget>
+
+                  <!-- NEWWWWWW CLASSSSSSSSS -->
+
+                  <widget class="QWidget" name="decide_MF">
+                        <attribute name="title">
+                              <string>Decide Membership Function</string>
+                        </attribute>
+                        <widget class="QPushButton" name="pb_decideMF">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>130</x>
+                                          <y>480</y>
+                                          <width>120</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Save</string>
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_cancel_decideMF">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>250</x>
+                                          <y>480</y>
+                                          <width>81</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Cancel</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>50</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Factor 1</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_F1_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>120</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var1</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_F1_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>62</x>
+                                          <y>120</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_F1_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>69</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_F1_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>174</x>
+                                          <y>120</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var2</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_F1_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>226</x>
+                                          <y>120</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_F1_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>233</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_F1_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>338</x>
+                                          <y>120</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var3</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="le_F1_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>390</x>
+                                          <y>120</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_F1_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>397</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>190</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Factor 2</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_F2_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>250</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var1</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_F2_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>62</x>
+                                          <y>250</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_F2_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>69</x>
+                                          <y>250</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_F2_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>174</x>
+                                          <y>250</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var2</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_F2_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>226</x>
+                                          <y>250</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_F2_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>233</x>
+                                          <y>250</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_F2_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>338</x>
+                                          <y>250</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var3</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_F2_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>390</x>
+                                          <y>250</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_F2_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>397</x>
+                                          <y>250</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_outputfac">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>320</y>
+                                          <width>301</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Output factor</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_outputfac_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>10</x>
+                                          <y>380</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var1</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_outputfac_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>62</x>
+                                          <y>380</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_outputfac_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>69</x>
+                                          <y>380</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_outputfac_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>174</x>
+                                          <y>380</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var2</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_outputfac_var1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>226</x>
+                                          <y>380</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_outputfac_var2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>233</x>
+                                          <y>380</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_outputfac_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>338</x>
+                                          <y>380</y>
+                                          <width>50</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Var3</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_outputfac_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>390</x>
+                                          <y>380</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>:</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="MF_outputfac_var3">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>397</x>
+                                          <y>380</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                  </widget>
+
+                  <!-- NEWWW CLASSSS -->
+
+                  <widget class="QWidget" name="fuzzy_rules">
+                        <attribute name="title">
+                              <string>Fuzzy Rules</string>
+                        </attribute>
+                        <widget class="QLabel" name="lb_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>50</y>
+                                          <width>150</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>IF Factor1 is </string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="choose_MF_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>180</x>
+                                          <y>50</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="choose_operator">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>130</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string> Factor2 is </string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="choose_MF_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>240</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_outputfac">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>190</y>
+                                          <width>200</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>THEN Output Factor is</string>
+                              </property>
+                        </widget>
+                        <widget class="QComboBox" name="choose_MF_outputfac">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>230</x>
+                                          <y>190</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="whatsThis">
+                                    <string />
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_fuzzy_rule_save">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>130</x>
+                                          <y>480</y>
+                                          <width>120</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Save</string>
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_fuzzy_rule_cancel">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>250</x>
+                                          <y>480</y>
+                                          <width>81</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Cancel</string>
+                              </property>
+                        </widget>
+
+                  </widget>
+
+                  <!-- NEWWWW CLASSSS -->
+
+                  <widget class="QWidget" name="feature_vec">
+                        <attribute name="title">
+                              <string>Feature Vector</string>
+                        </attribute>
+                        <widget class="QLabel" name="lb_feature_vec">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>50</y>
+                                          <width>300</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>Enter the target feature vector</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Factor1</string>
+                              </property>
+                        </widget>
+
+                        <widget class="QLabel" name="lb_comma">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>125</x>
+                                          <y>120</y>
+                                          <width>5</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>,</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>135</x>
+                                          <y>120</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Factor2</string>
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_feature_vec_save">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>220</x>
+                                          <y>190</y>
+                                          <width>250</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Calculate Fuzzy Values</string>
+                              </property>
+                        </widget>
+                        <widget class="QPushButton" name="pb_feature_vec_cancel">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>400</x>
+                                          <y>480</y>
+                                          <width>81</width>
+                                          <height>31</height>
+                                    </rect>
+                              </property>
+                              <property name="font">
+                                    <font>
+                                          <pointsize>10</pointsize>
+                                    </font>
+                              </property>
+                              <property name="text">
+                                    <string>Cancel</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_comma">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>230</y>
+                                          <width>300</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>Fuzzy value for factor 1</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_calc_fac1">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>330</x>
+                                          <y>230</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Calcuated Value</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_comma">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>300</y>
+                                          <width>300</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>Fuzzy value for factor 2</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_calc_fac2">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>330</x>
+                                          <y>300</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Calculated value</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_fuzz_after_operator">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>370</y>
+                                          <width>300</width>
+                                          <height>50</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>Fuzzy value after applying operator</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_calc_final">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>330</x>
+                                          <y>370</y>
+                                          <width>100</width>
+                                          <height>60</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Calculated value</string>
+                              </property>
+                        </widget>
+                        <widget class="QLabel" name="lb_defuzz">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>20</x>
+                                          <y>440</y>
+                                          <width>300</width>
+                                          <height>30</height>
+                                    </rect>
+                              </property>
+                              <property name="text">
+                                    <string>Defuzzified Probability</string>
+                              </property>
+                        </widget>
+                        <widget class="QLineEdit" name="le_defuzz_probab">
+                              <property name="geometry">
+                                    <rect>
+                                          <x>330</x>
+                                          <y>440</y>
+                                          <width>100</width>
+                                          <height>30</height>
+                                    </rect>
+                              </property>
+                              <property name="placeholderText">
+                                    <string>Calculated value</string>
+                              </property>
+                        </widget>
+                  </widget>
+            
+
+
+            <widget class="QWidget" name="rasters_trial">
+                  <widget class="QLabel" name="lb_add_raster">
+                        <property name="geometry">
+                              <rect>
+                                    <x>20</x>
+                                    <y>50</y>
+                                    <width>200</width>
+                                    <height>50</height>
+                              </rect>
+                        </property>
+                        <property name="font">
+                              <font>
+                                    <pointsize>10</pointsize>
+                              </font>
+                        </property>
+                        <property name="text">
+                              <string>Add Rasters</string>
+                        </property>
+                  </widget>
+                  <widget class="QListWidget" name="lw_show_added_rasters">
+                        <property name="geometry">
+                              <rect>
+                                    <x>20</x>
+                                    <y>270</y>
+                                    <width>440</width>
+                                    <height>90</height>
+                              </rect>
+                        </property>
+                        <property name="font">
+                              <font>
+                                    <family>MS Shell Dlg 2</family>
+                                    <pointsize>10</pointsize>
+                              </font>
+                        </property>
+                        <property name="sizeAdjustPolicy">
+                              <enum>QAbstractScrollArea::AdjustToContents</enum>
+                        </property>
+                        <property name="isWrapping" stdset="0">
+                              <bool>false</bool>
+                        </property>
+                        <property name="modelColumn">
+                              <number>0</number>
+                        </property>
+                        <property name="currentRow">
+                              <number>-1</number>
+                        </property>
+                        <property name="sortingEnabled">
+                              <bool>false</bool>
+                        </property>
+                  </widget>
+                  <widget class="QPushButton" name="pb_add_rasters">
+                        <property name="geometry">
+                              <rect>
+                                    <x>160</x>
+                                    <y>50</y>
+                                    <width>150</width>
+                                    <height>50</height>
+                              </rect>
+                        </property>
+                        <property name="font">
+                              <font>
+                                    <pointsize>10</pointsize>
+                              </font>
+                        </property>
+                        <property name="text">
+                              <string>Load Layers</string>
+                        </property>
+                  </widget>
+                  <widget class="QPushButton" name="pb_remove_rasters">
+                        <property name="geometry">
+                              <rect>
+                                    <x>320</x>
+                                    <y>50</y>
+                                    <width>250</width>
+                                    <height>50</height>
+                              </rect>
+                        </property>
+                        <property name="font">
+                              <font>
+                                    <pointsize>10</pointsize>
+                              </font>
+                        </property>
+                        <property name="text">
+                              <string>Remove Selected Layers</string>
+                        </property>
+                  </widget>
+            </widget>
+
+            </widget>
+
+      </widget>
+      <resources />
+      <connections />
+</ui>
