@@ -6,12 +6,12 @@ Created a first iteration (simplistic and preliminary version) of a QGIS Plugin 
 ## Features of the plugin realized - 
 
 1. Identify Factors : Identifying the factors that affect the system (inputs as number of factors and corresponding number of variables for each of them)
-   a. NOTE: Assumption here - 
+   - NOTE: Assumption here - 
       Hardcoded 2 input factors and 3 variables for each of these 2 factors as well as the output factor.
-   b. Reason and feasibility of the assumption to be overcome -
-             i. Reason - Researched a lot (over the web as well as a mail to Bijal Ma’am which I didn’t get a reply for because she might’ve been busy) but couldn’t figure                          out how to make a dynamic GUI such that QLabels and QLineEdits appear on the plugin interface. The nearest I could get to a dynamic GUI was pasting                          in QLineEdits but that wouldn’t help here.
-                Feasibility to overcome - When we can figure out how to make the GUI dynamic.
-                Membership Functions : Provision to label each of the variables for the inputs as well as output factor 
+   - Reason and feasibility of the assumption to be overcome -
+     - Reason - Researched a lot (over the web as well as a mail to Bijal Ma’am which I didn’t get a reply for because she might’ve been busy) but couldn’t figure                          out how to make a dynamic GUI such that QLabels and QLineEdits appear on the plugin interface. The nearest I could get to a dynamic GUI was pasting                          in QLineEdits but that wouldn’t help here.
+     - Feasibility to overcome - When we can figure out how to make the GUI dynamic.
+ 2. Membership Functions : Provision to label each of the variables for the inputs as well as output factor 
 
 
 2. Membership Functions (contd.) : Choosing a membership function for each of them from the following options - Piecewise Linear, Sigmoid, Gaussian, Quadratic and Cubic polynomial
